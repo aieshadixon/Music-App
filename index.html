@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bytesized&display=swap" rel="stylesheet">
+    <!-- fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Studio</title>
+</head>
+<body>
+    <div class="app">
+        <header>
+            <h1>
+                Your Studio
+            </h1>
+        </header>
+        <main>
+        <!-- song list -->
+        <div id="song-list">
+            <h3>Playlist</h3>
+            <ul>
+                <li data-src="audio/song1.mp3">Song 1 by Artist</li>
+                <li data-src="audio/song2.mp3">Song 2 by Artist</li>
+                <li data-src="audio/song3.mp3">Song 3 by Artist</li>
+            </ul>
+        </div>
+
+        <div class="music-player">
+            <!-- song info -->
+            <div class="info">
+                <div class="cover-art"></div>
+                <div class="song-name">song title</div>
+                <div class="artist-name">artist name</div>
+            </div>
+
+            <!-- music player buttons -->
+            <div class="buttons">
+                <div class="previous-button"><i class="fa-solid fa-backward-step"></i></div>
+                <div class="play-pause"><i class="fa-solid fa-circle-play"></i></div>
+                <div class="next-button"><i class="fa-solid fa-forward-step"></i></div>
+            </div>
+
+            <!-- duration slider -->
+            <div class="slider">
+                <input type="range" min="1" max="100" value="50" class="duration-slider" id="duration">
+            </div>
+
+            <!-- volume slider -->
+            <div class="slider">
+                <i class="fa-solid fa-volume-low"></i>
+                <input type="range" min="1" max="100" value="50" class="volume-slider" id="volume">
+                <i class="fa-solid fa-volume-high"></i>
+            </div>
+         </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

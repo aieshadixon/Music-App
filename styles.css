@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(247, 247, 247);
+}
+
+
+
+header {
+    font-family: "Bytesized", sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+h1 {
+    text-shadow: #2f2e2e;
+}
+
+.main {
+    max-width: 700px;
+}
+
+#song-list {
+    background-color: rgb(181, 203, 243);
+    text-align: center;
+    margin: 20px;
+    padding: 35px 0;
+    border-radius: 20px;
+
+}
+
+#song-list h3 {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#song-list ul {
+    list-style-type: none;
+}
+
+#song-list li {
+    cursor: pointer;
+}
+
+#song-list li:hover {
+    color: coral;
+}
+
+
+
+
+.music-player {
+    background-color: azure;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column; 
+    height: 100%;
+    margin: 70px;
+    padding: 35px 0;
+    border-radius: 5%;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.song-name {
+    font-family: monospace;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.artist-name {
+    font-size: 20px;
+}
+
+.cover-art {
+    margin: 30px;
+    height: 250px;
+    width: 250px;
+    background-image: url("https://images.unsplash.com/photo-1576158113928-4c240eaaf360?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGxhY2Vob2xkZXIlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10%;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.previous-button, .next-button, .play-pause {
+    padding: 25px;
+    font-size: 30px;
+    cursor: pointer;
+    
+}
+
+.volume-slider {
+    margin: 15px;
+}
+
+
+
