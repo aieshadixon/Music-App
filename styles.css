@@ -108,6 +108,10 @@ h1 {
     margin: 15px;
 }
 
+.slider {
+    cursor: pointer;
+}
+
 footer {
     text-align: center;
     font-family: "Bytesized", sans-serif;
